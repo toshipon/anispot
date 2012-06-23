@@ -6,7 +6,7 @@ import com.sun.net.httpserver.HttpContext
 
 object Courses extends Controller {
   
-  def detail = Action {
-    Ok(views.html.sp.courses.detail())
+  def index(course : Long) = Action {
+    Ok(views.html.sp.courses.index(""))
   }
 }
